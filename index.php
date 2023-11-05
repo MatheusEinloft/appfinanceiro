@@ -1,12 +1,5 @@
-<?php
-require_once("conexao.php");
-?>
-
-//CRIAR USUARIO ADMINISTRADOR CASO ELE NAO EXISTA
-
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,20 +12,19 @@ require_once("conexao.php");
 <body>
 <!------ Include the above in your HEAD tag ---------->
     <div id="login">
-        <h3 class="text-center text-white pt-5">Login form</h3>
         <div class="container">
             <div id="login-row" class="row justify-content-center align-items-center">
                 <div id="login-column" class="col-md-6">
                     <div id="login-box" class="col-md-12">
-                        <form id="login-form" class="form" action="" method="post" action="autenticar.php">
+                        <form id="login-form" class="form" action="autenticar.php" method="post">
                             <h3 class="text-center text-info">Login</h3>
                             <div class="form-group">
-                                <label for="username" class="text-info">Username:</label><br>
-                                <input type="text" name="username" id="username" class="form-control" placeholder="Username">
+                                <label for="email" class="text-info">E-mail:</label><br>
+                                <input type="text" name="email" class="form-control" placeholder="E-mail" required autofocus>
                             </div>
                             <div class="form-group">
-                                <label for="password" class="text-info">Password:</label><br>
-                                <input type="text" name="password" id="password" class="form-control" placeholder="Password">
+                                <label for="senha" class="text-info">Senha:</label><br>
+                                <input type="text" name="senha" class="form-control" placeholder="Senha" required autofocus>
                             </div>
                             <div class="form-group">
                                 <input type="submit" name="submit" class="btn btn-info btn-md" value="submit">
