@@ -13,4 +13,16 @@ $total_reg = @count($res);
 
 echo $total_reg;
 
+if($total_reg > 0) {
+    $nivel = $res[0]['nivel'];
+
+    if($nivel == 'Administrador') {
+        echo "<script>window.location='painel-adm'</script>";
+    }
+} else {
+    echo "<script>window.alert('Dados Incorretos')</script>";
+    echo "<script>window.location='index.php'</script>";
+}
+
+
 ?>
