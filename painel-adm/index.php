@@ -1,6 +1,5 @@
 <?php
     @session_start();
-    echo'teste';
     echo $_SESSION['nome_usuario'];
 ?>
 

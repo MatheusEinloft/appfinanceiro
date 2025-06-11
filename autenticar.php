@@ -12,8 +12,6 @@
     $res = $query->fetchAll(PDO::FETCH_ASSOC);
     $total_reg = @count($res);
 
-    echo $total_reg;
-
     if($total_reg > 0) {
         $nivel = $res[0]['nivel'];
 
