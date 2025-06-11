@@ -24,7 +24,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="senha" class="text-info">Senha:</label><br>
-                                <input type="text" name="senha" class="form-control" placeholder="Senha" required autofocus>
+                                <input type="password" name="senha" class="form-control" placeholder="Senha" required>
                             </div>
                             <div class="form-group">
                                 <input type="submit" name="submit" class="btn btn-info btn-md" value="submit">
